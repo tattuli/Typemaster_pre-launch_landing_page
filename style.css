@@ -1,0 +1,367 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 37.5rem;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  gap: 13.65rem;
+  padding: 2.7rem 2.4rem;
+  margin-bottom: 4.8rem;
+}
+
+.btn-order {
+  width: 15rem;
+  height: 4.8rem;
+  background-color: #e8eff2;
+  border-radius: 8px;
+  border: none;
+  padding: 1.1rem 1.4rem;
+}
+
+.pre-order {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #162542;
+  font-weight: 700;
+  line-height: 2.6rem;
+}
+
+.hero {
+  display: grid;
+  row-gap: 3.2rem;
+  padding: 0 2.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.heading-primary {
+  width: 32.7rem;
+  font-size: 4.8rem;
+  font-weight: 900;
+  line-height: 4.8rem;
+  text-transform: uppercase;
+}
+
+.hero-description {
+  width: 32.7rem;
+  height: 7.8rem;
+  color: #7b8bad;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.order-now {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.btn-order--main {
+  background-color: #f16718;
+}
+.pre-order--main {
+  color: #ffffff;
+}
+
+.release-date {
+  font-weight: 700;
+  color: #7b8bad;
+  width: 12.7rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.hero-img {
+  width: 35.1rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.wireless-keyboard {
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 3rem;
+  row-gap: 4rem;
+  margin-bottom: 11.1rem;
+}
+
+.keyboard-p {
+  background-color: #f16718;
+  height: 20rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.keyboard-phone {
+  width: 12rem;
+  height: 20rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+}
+
+.keyboard-glass {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 2rem;
+}
+
+.text-box {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 0 6rem;
+  margin: 0 auto;
+}
+.heading-secondary {
+  font-weight: 900;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  width: 25.5rem;
+  text-align: center;
+  line-height: 3.6rem;
+}
+
+.keyboard-description {
+  color: #7b8bad;
+  width: 32.7rem;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  margin-left: -3.8rem;
+}
+
+.keyboard-functions {
+  display: grid;
+  row-gap: 6.4rem;
+  text-align: center;
+  margin-bottom: 9.6rem;
+}
+
+.icon-box {
+  width: 6.5rem;
+  height: 6.5rem;
+  background-color: #f16718;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 4.8rem;
+}
+
+.heading-tertiary {
+  font-weight: 900;
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+  line-height: 2.8rem;
+}
+
+.functions-description {
+  width: 32.7rem;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #7b8bad;
+}
+
+.footer p {
+  font-size: 1.6rem;
+  color: #7b8bad;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+span {
+  font-weight: bold;
+}
+
+.btn-order:hover,
+.btn-order:active {
+  background-color: #162542;
+  cursor: pointer;
+}
+.pre-order:hover {
+  color: #ffffff;
+}
+.btn-order--main:hover,
+.btn-order--main:active {
+  background-color: #ff9b62;
+  cursor: pointer;
+}
+
+/* 768px */
+@media (min-width: 48em) {
+  .container {
+    max-width: 76.8rem;
+    background-image: url(img/tablet/image-keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: 64%;
+    background-position: 40rem 16rem;
+  }
+
+  .header {
+    gap: 50rem;
+    margin-bottom: 10rem;
+    padding: 2.7rem 3.9rem;
+  }
+  .hero {
+    grid-template-columns: 33.9rem;
+    grid-template-rows: 1fr 7.8rem 4.8rem;
+    margin-bottom: 16.48rem;
+    padding: 0 3.9rem;
+  }
+  .hero-description {
+    grid-row: 2 / 3;
+  }
+  .order-now {
+    grid-row: 3 / 4;
+  }
+  .hero-img {
+    display: none;
+  }
+  .text-box {
+    flex-direction: row;
+    padding: 0;
+    width: 68.9rem;
+    column-gap: 3.2rem;
+    align-items: center;
+  }
+  .keyboard-description {
+    width: 39.8rem;
+  }
+  .keyboard-functions {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 6.9rem;
+    row-gap: 7.2rem;
+    padding: 0 3.9rem;
+  }
+  .icon-box {
+    margin-left: 0;
+    margin-bottom: 4rem;
+  }
+  .keyboard-description,
+  .heading-secondary,
+  .functions-description,
+  .keyboard-functions {
+    text-align: left;
+  }
+  .keyboard-glass {
+    display: none;
+  }
+  .keyboard-g {
+    background-image: url(img/tablet/image-glass-and-keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 2rem;
+  }
+  .keyboard-phone {
+    display: none;
+  }
+  .keyboard-p {
+    background-image: url(img/tablet/image-phone-and-keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode: multiply;
+    border-radius: 2rem;
+    height: 32rem;
+  }
+  .wireless-keyboard {
+    grid-template-columns: 21.4rem 44.5rem;
+    grid-template-rows: 1fr;
+    padding: 0 3.9rem;
+  }
+  .footer p {
+    margin-bottom: 4.3rem;
+  }
+}
+@media (min-width: 90em) {
+  .container {
+    max-width: 144rem;
+    background-image: none;
+    background-image: url(img/desktop/image-keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 54rem 13rem;
+  }
+  .box {
+    width: 148rem;
+    background-image: url(img/logo/pattern-square.svg);
+    background-repeat: no-repeat;
+    background-position: 130rem 13rem;
+    padding: 0 16.5rem;
+  }
+  .header {
+    gap: 89.5rem;
+  }
+  .wireless-keyboard {
+    margin-top: 20rem;
+    grid-template-columns: 25.5rem 44.5rem 1fr;
+    grid-template-rows: 48rem;
+    padding: 0;
+  }
+  .keyboard-p {
+    background-image: none;
+    background-image: url(img/desktop/image-phone-and-keyboard.jpg);
+    background-size: cover;
+    height: 48rem;
+  }
+  .keyboard-g {
+    background-image: none;
+    background-image: url(img/desktop/image-glass-and-keyboard.jpg);
+    background-size: cover;
+    height: 48rem;
+  }
+  .text-box {
+    width: 25.5rem;
+    flex-direction: column;
+    grid-column: 3/4;
+    justify-content: center;
+    align-items: center;
+  }
+  .keyboard-description {
+    width: 25.5rem;
+    margin: 0;
+  }
+  .keyboard-functions {
+    margin-top: 5.7rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    margin-bottom: 12.8rem;
+    padding: 0;
+  }
+  .functions-description {
+    width: 25.5rem;
+    height: 13rem;
+    margin: 0;
+  }
+  .footer p {
+    margin-bottom: 3.9rem;
+  }
+}
