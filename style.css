@@ -365,3 +365,51 @@ span {
     margin-bottom: 3.9rem;
   }
 }
+
+/* 368px */
+@media (max-width: 23em) {
+  .container {
+    max-width: 30rem;
+  }
+  .header {
+    gap: 6rem;
+  }
+  .heading-primary {
+    font-size: 3.8rem;
+    line-height: 3.8rem;
+  }
+  .hero-description {
+    width: 27rem;
+  }
+
+  .order-now {
+    gap: 1rem;
+  }
+  .release-date {
+    font-size: 1.4rem;
+  }
+  .hero-img {
+    width: 27rem;
+  }
+  .wireless-keyboard {
+    margin-bottom: 8rem;
+  }
+  .heading-secondary {
+    width: 20.5rem;
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+  .icon-box {
+    margin-bottom: 2.5rem;
+  }
+  .keyboard-description {
+    width: 27rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .functions-description {
+    width: 27rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}
